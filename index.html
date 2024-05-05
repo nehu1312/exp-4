@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spaghetti Carbonara Recipe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .recipe {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .ingredients {
+            margin-bottom: 15px;
+        }
+        .instructions {
+            display: none; /* Initially hidden */
+            margin-top: 10px;
+        }
+        .toggle-btn {
+            padding: 10px 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .toggle-btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+    <script>
+        function toggleInstructions() {
+            var instructions = document.getElementById("instructions");
+            if (instructions.style.display === "none") {
+                instructions.style.display = "block";
+            } else {
+                instructions.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+
+<div class="recipe">
+    <h1>Spaghetti Carbonara</h1>
+    <h2>Preparation Time</h2>
+    <ul>
+        <li>Preparation: 15 minutes</li>
+        <li>Cooking: 15 minutes</li>
+        <li>Total: 30 minutes</li>
+    </ul>
+
+    <h2>Ingredients</h2>
+    <ul class="ingredients">
+        <li>12 ounces (340 grams) spaghetti</li>
+        <li>4 large egg yolks</li>
+        <li>1 large egg</li>
+        <li>1 cup (100 grams) freshly grated Parmesan cheese</li>
+        <li>4 ounces (115 grams) pancetta or bacon, diced</li>
+        <li>2 cloves garlic, minced</li>
+        <li>1 tablespoon olive oil</li>
+        <li>Salt and freshly ground black pepper</li>
+        <li>Fresh parsley, chopped (optional)</li>
+    </ul>
+
+    <button class="toggle-btn" onclick="toggleInstructions()">Toggle Cooking Instructions</button>
+
+    <div id="instructions" class="instructions">
+        <h2>Instructions</h2>
+        <ol>
+            <li>Cook the spaghetti in a large pot of salted boiling water until al dente. Reserve 1 cup of pasta cooking water, then drain the pasta.</li>
+            <li>Whisk together the egg yolks, egg, and Parmesan cheese in a large bowl.</li>
+            <li>Cook the pancetta or bacon in a large skillet over medium heat until crisp. Add the minced garlic and sauté for 1-2 minutes.</li>
+            <li>Add the drained spaghetti to the skillet and mix well with the pancetta/bacon.</li>
+            <li>Remove the skillet from heat and add the egg mixture to the spaghetti, stirring quickly to create a creamy sauce. Adjust with pasta cooking water if necessary.</li>
+            <li>Season with salt and pepper, and garnish with fresh parsley if desired. Serve immediately.</li>
+        </ol>
+    </div>
+</div>
+
+</body>
+</html>
